@@ -28,13 +28,10 @@ void Engine::update(float dtAsSeconds)
 		// Update Thomas
 		m_Thomas.update(dtAsSeconds);
 
-		// Update Bob
-		m_Bob.update(dtAsSeconds);
-
 		// Detect collisions and see if characters have reached the goal tile
 		// The second part of the if condition is only executed
 		// when thomas is touching the home tile
-		if (detectCollisions(m_Thomas) && detectCollisions(m_Bob))
+		if (detectCollisions(m_Thomas))
 		{
 			// New level required
 			m_NewLevelRequired = true;
@@ -42,21 +39,6 @@ void Engine::update(float dtAsSeconds)
 			// Play the reach goal sound
 			m_SM.playReachGoal();
 
-		}
-		else
-		{
-			// Run bobs collision detection
-			detectCollisions(m_Bob);
-		}
-
-		// Let bob and thomas jump on each others heads
-		if (m_Bob.getFeet().intersects(m_Thomas.getHead()))
-		{
-			m_Bob.stopFalling(m_Thomas.getHead().top);
-		}
-		else if (m_Thomas.getFeet().intersects(m_Bob.getHead()))
-		{
-			m_Thomas.stopFalling(m_Bob.getHead().top);
 		}
 
 		// Count down the time the player has left
@@ -74,7 +56,7 @@ void Engine::update(float dtAsSeconds)
 	vector<Vector2f>::iterator it;
 
 	// Iterate through the vector of Vector2f objects
-	for (it = m_FireEmitters.begin(); it != m_FireEmitters.end(); it++)
+	for(it = m_FireEmitters.begin(); it != m_FireEmitters.end(); it++)
 	{
 		// Where is this emitter?
 		// Store the location in pos
@@ -97,7 +79,6 @@ void Engine::update(float dtAsSeconds)
 	if (m_SplitScreen)
 	{
 		m_LeftView.setCenter(m_Thomas.getCenter());
-		m_RightView.setCenter(m_Bob.getCenter());
 	}
 	else
 	{
@@ -105,10 +86,6 @@ void Engine::update(float dtAsSeconds)
 		if (m_Character1)
 		{
 			m_MainView.setCenter(m_Thomas.getCenter());
-		}
-		else
-		{
-			m_MainView.setCenter(m_Bob.getCenter());
 		}
 	}
 

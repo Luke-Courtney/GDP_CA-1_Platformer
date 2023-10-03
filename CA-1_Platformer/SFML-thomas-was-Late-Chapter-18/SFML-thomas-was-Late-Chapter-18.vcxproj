@@ -31,7 +31,6 @@
     <ClInclude Include="code\Thomas.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="code\Bob.cpp" />
     <ClCompile Include="code\DetectCollisions.cpp" />
     <ClCompile Include="code\Draw.cpp" />
     <ClCompile Include="code\Engine.cpp" />
