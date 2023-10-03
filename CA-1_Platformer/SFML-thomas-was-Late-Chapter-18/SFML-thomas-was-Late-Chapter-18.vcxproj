@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="code\Bob.h" />
     <ClInclude Include="code\Engine.h" />
     <ClInclude Include="code\HUD.h" />
     <ClInclude Include="code\LevelManager.h" />
