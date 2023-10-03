@@ -1,16 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Bob" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>code\Bob.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Engine" Collapsed="true">
     <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAQAAoAAAAggAEC0CAYAAAAIUMBoEBQQDABIAxgWAQA=</HashCode>
+      <HashCode>CAQAAoAAAAggAEA0CAYAAAAIUMBoEBQQDABIAxgWAQA=</HashCode>
       <FileName>code\Engine.h</FileName>
     </TypeIdentifier>
   </Class>
