@@ -30,6 +30,8 @@ Engine::Engine()
 	m_BGRightView.setViewport(
 		FloatRect(0.5f, 0.001f, 0.499f, 0.998f));
 
+	//SHADERS DISABLED
+	/*
 	// Can this graphics card use shaders?
 	if (!sf::Shader::isAvailable())
 	{
@@ -42,6 +44,7 @@ Engine::Engine()
 		m_RippleShader.loadFromFile("shaders/vertShader.vert",
 			"shaders/rippleShader.frag");
 	}
+	*/
 
 	m_BackgroundTexture = TextureHolder::GetTexture(
 		"graphics/background.png");
