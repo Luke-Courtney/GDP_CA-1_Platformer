@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\Bob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="code\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -44,6 +47,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="code\Bob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="code\DetectCollisions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
