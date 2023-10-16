@@ -9,7 +9,7 @@ Engine::Engine()
 	resolution.y = VideoMode::getDesktopMode().height;
 
 	m_Window.create(VideoMode(resolution.x, resolution.y),
-		"Thomas was late",
+		"CA GDP Platformer",
 		Style::Fullscreen);
 
 	// Initialize the full screen view
@@ -30,6 +30,7 @@ Engine::Engine()
 	m_BGRightView.setViewport(
 		FloatRect(0.5f, 0.001f, 0.499f, 0.998f));
 
+	/*
 	// Can this graphics card use shaders?
 	if (!sf::Shader::isAvailable())
 	{
@@ -42,6 +43,7 @@ Engine::Engine()
 		m_RippleShader.loadFromFile("shaders/vertShader.vert",
 			"shaders/rippleShader.frag");
 	}
+	*/
 
 	m_BackgroundTexture = TextureHolder::GetTexture(
 		"graphics/background.png");
