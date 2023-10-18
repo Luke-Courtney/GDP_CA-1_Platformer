@@ -1,23 +1,35 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML-thomas-was-Late-Chapter-18.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Engine.cpp
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.cpp(8,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+  DetectCollisions.cpp
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(13,16): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.cpp(9,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(14,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.cpp(11,52): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(34,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.cpp(11,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(34,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(38,44): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(53,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(54,18): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(62,47): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
   SFML-thomas-was-Late-Chapter-18.vcxproj -> C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\x64\Debug\CA-1_Platformer.exe

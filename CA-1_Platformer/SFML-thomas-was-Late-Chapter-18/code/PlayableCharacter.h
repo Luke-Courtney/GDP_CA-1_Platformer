@@ -26,6 +26,9 @@ protected:
 	// Has the player just initialted a jump
 	bool m_JustJumped = false;
 
+	// Where is the player
+	Vector2f m_Position;
+
 	// Private variables and functions come next
 private:
 	// What is the gravity
@@ -34,8 +37,7 @@ private:
 	// How fast is the character
 	float m_Speed = 400;
 
-	// Where is the player
-	Vector2f m_Position;
+	
 
 	// Where are the characters various body parts?
 	FloatRect m_Feet;

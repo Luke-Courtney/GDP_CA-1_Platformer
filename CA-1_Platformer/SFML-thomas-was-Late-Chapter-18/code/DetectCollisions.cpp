@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <iostream>
 
 bool Engine::detectCollisions(PlayableCharacter& character)
 {
@@ -35,6 +36,13 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 	{
 		// respawn the character
 		character.spawn(m_LM.getStartPosition(), GRAVITY);
+	}
+
+	//Detect thomas collisions with enemy
+	if (m_Thomas.getPosition().intersects(m_Bob.getPosition()))
+	{
+		//Collision detected
+		std::cout << "Thomas hit bob\n";
 	}
 
 	for (int x = startX; x < endX; x++)

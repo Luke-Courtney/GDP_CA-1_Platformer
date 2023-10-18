@@ -1,5 +1,6 @@
 #include "Bob.h"
 #include "TextureHolder.h"
+#include <iostream>
 
 Bob::Bob()
 {
@@ -7,12 +8,43 @@ Bob::Bob()
 	m_Sprite = Sprite(TextureHolder::GetTexture(
 		"graphics/bob.png"));
 
+	
+
 	m_JumpDuration = .25;
+}
+
+void Bob::SetPatrolPoint(Vector2f newPatrolPoint)
+{
+	patrolPoint = newPatrolPoint;
+}
+
+void Bob::patrol()
+{
+	float asd = m_Position.x;
+	std::cout << "Moving = " << moving << "\n";
+	std::cout << "Flipped = " << flipped << "\n";
+	std::cout << "m_Position.x = " << m_Position.x << "\n";
+	std::cout << "patrolPoint.x = " << patrolPoint.x << "\n";
+	//If bob moves far enough from of his patrol point, flip direction
+	if (moving && !flipped && m_Position.x > patrolPoint.x + 150)
+	{
+		flipped = true;
+		//m_Sprite.setScale(-1, 0);
+	}
+
+	if (moving && flipped && m_Position.x < patrolPoint.x - 150)
+	{
+		std::cout << "Should unflip";
+		flipped = false;
+		//m_Sprite.setScale(1, 0);
+	}
 }
 
 bool Bob::handleInput()
 {
 	m_JustJumped = false;
+
+	patrol();
 
 	if (Keyboard::isKeyPressed(Keyboard::Up))
 	{
@@ -33,9 +65,11 @@ bool Bob::handleInput()
 		m_IsFalling = true;
 
 	}
-	if (Keyboard::isKeyPressed(Keyboard::Left))
+
+	if (moving && flipped)
 	{
 		m_LeftPressed = true;
+		std::cout << "Moving Left\n";
 
 	}
 	else
@@ -44,10 +78,12 @@ bool Bob::handleInput()
 	}
 
 
-	if (Keyboard::isKeyPressed(Keyboard::Right))
+	if (moving && !flipped)
 	{
 
-		m_RightPressed = true;;
+		m_RightPressed = true;
+
+		std::cout << "Moving Right\n";
 
 	}
 	else
