@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <iostream>
 
 void Engine::loadLevel()
 {
@@ -22,9 +23,15 @@ void Engine::loadLevel()
 	// How long is this new time limit
 	m_TimeRemaining = m_LM.getTimeLimit();
 
-	// Spawn Thomas and Bob
+	// Spawn Thomas and Bobs
 	m_Thomas.spawn(m_LM.getStartPosition(), GRAVITY);
-	m_Bob.spawn(Vector2f(500,450), GRAVITY);
+	m_Bob.spawn(m_LM.m_BobStartPos, GRAVITY);
+	m_Bob2.spawn(m_LM.m_Bob2StartPos, GRAVITY);
+
+	//Spawn pickups
+	cout << "Spawning speedup" << endl;
+	m_SpeedUp.spawn(Vector2f(400, 400));
+	cout << "speedup: " << m_SpeedUp.m_Position.x << "," << m_SpeedUp.m_Position.y << endl;
 
 	// Make sure this code isn't run again
 	m_NewLevelRequired = false;

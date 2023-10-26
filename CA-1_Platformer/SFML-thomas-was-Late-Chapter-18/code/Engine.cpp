@@ -54,14 +54,12 @@ Engine::Engine()
 
 	// Load the texture for the background vertex array
 	m_TextureTiles = TextureHolder::GetTexture(
-		"graphics/tiles_sheet.png");
-
-	// Initialize the particle system
+		"graphics/tiles_sheet.png");	// Initialize the particle system
 	m_PS.init(1000);
 
 	//Set bob patrol point
-	m_Bob.SetPatrolPoint(Vector2f(500,450));
-
+	m_Bob.SetPatrolPoint(Vector2f(500, 400));
+	m_Bob2.SetPatrolPoint(Vector2f(2000, 400));
 }// End Engine constructor
 
 void Engine::run()

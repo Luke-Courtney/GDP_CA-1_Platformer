@@ -20,6 +20,9 @@ public:
 	const int TILE_SIZE = 50;
 	const int VERTS_IN_QUAD = 4;
 
+	Vector2f m_BobStartPos;
+	Vector2f m_Bob2StartPos;
+
 	float getTimeLimit();
 
 	Vector2f getStartPosition();

@@ -45,6 +45,9 @@
     <ClInclude Include="code\Thomas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="code\SpeedUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\Bob.cpp">
@@ -96,6 +99,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="code\Update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\SpeedUp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

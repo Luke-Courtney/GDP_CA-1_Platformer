@@ -1,5 +1,4 @@
 #include "Engine.h"
-#include <iostream>
 
 bool Engine::detectCollisions(PlayableCharacter& character)
 {
@@ -34,15 +33,21 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 	FloatRect level(0, 0, m_LM.getLevelSize().x * TILE_SIZE, m_LM.getLevelSize().y * TILE_SIZE);
 	if (!character.getPosition().intersects(level))
 	{
-		// respawn the character
-		character.spawn(m_LM.getStartPosition(), GRAVITY);
+		//Respawn the character
+		character.spawn(character.startPos, GRAVITY);
 	}
 
 	//Detect thomas collisions with enemy
 	if (m_Thomas.getPosition().intersects(m_Bob.getPosition()))
 	{
-		//Collision detected
-		std::cout << "Thomas hit bob\n";
+		if (m_Thomas.getFeet().intersects(m_Bob.getHead()))
+		{
+			m_Bob.spawn(Vector2f(10,10), GRAVITY);
+		}
+		else {
+			//Respawn thomas
+			m_Thomas.spawn(m_Thomas.startPos, GRAVITY);
+		}
 	}
 
 	for (int x = startX; x < endX; x++)
@@ -54,10 +59,9 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 			block.top = y * TILE_SIZE;
 
 			// Has character been burnt or drowned?
-			// Use head as this allows him to sink a bit
 			if (m_ArrayLevel[y][x] == 2 || m_ArrayLevel[y][x] == 3)
 			{
-				if (character.getHead().intersects(block))
+				if (character.getPosition().intersects(block))
 				{
 					character.spawn(m_LM.getStartPosition(), GRAVITY);
 					// Which sound should be played?

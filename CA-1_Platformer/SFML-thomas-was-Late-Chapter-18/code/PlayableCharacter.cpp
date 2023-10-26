@@ -6,6 +6,8 @@ void PlayableCharacter::spawn(Vector2f startPosition, float gravity)
 	m_Position.x = startPosition.x;
 	m_Position.y = startPosition.y;
 
+	startPos = startPosition;
+
 	// Initialize the gravity
 	m_Gravity = gravity;
 
@@ -19,12 +21,40 @@ void PlayableCharacter::update(float elapsedTime)
 
 	if (m_RightPressed)
 	{
-		m_Position.x += m_Speed * elapsedTime;
+		if (m_RightSpeed < m_Speed) {
+			m_RightSpeed += rampUp;
+		}
+
+		m_Position.x += m_RightSpeed * elapsedTime;
+		//m_Sprite.setScale(Vector2f(1, 1));
+	}
+	else if (m_RightSpeed > 0)
+	{
+		m_Position.x += m_RightSpeed * elapsedTime;
+		m_RightSpeed -= rampDown;
+
+		if (m_RightSpeed < 0) {
+			m_RightSpeed = 0;
+		}
 	}
 
 	if (m_LeftPressed)
 	{
-		m_Position.x -= m_Speed * elapsedTime;
+		if (m_LeftSpeed > -m_Speed) {
+			m_LeftSpeed -= rampUp;
+		}
+
+		m_Position.x += m_LeftSpeed * elapsedTime;
+		//m_Sprite.setScale(Vector2f(-1, 1));
+	}
+	else if (m_LeftSpeed < 0)
+	{
+		m_Position.x += m_LeftSpeed * elapsedTime;
+		m_LeftSpeed += rampDown;
+
+		if (m_LeftSpeed > 0) {
+			m_LeftSpeed = 0;
+		}
 	}
 
 

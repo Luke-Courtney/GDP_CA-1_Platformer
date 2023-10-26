@@ -3,6 +3,7 @@
 #include "TextureHolder.h"
 #include "Thomas.h"
 #include "Bob.h"
+#include "SpeedUp.h"
 #include "LevelManager.h"
 #include "SoundManager.h"
 #include "HUD.h"
@@ -22,9 +23,11 @@ private:
 	// Thomas and his friend, Bob
 	Thomas m_Thomas;
 	Bob m_Bob;
+	Bob m_Bob2;
 
-	// A class to manage all the levels
-	LevelManager m_LM;
+	//Pickups
+	//Speed
+	SpeedUp m_SpeedUp;
 
 	// Create a SoundManager
 	SoundManager m_SM;
@@ -106,10 +109,12 @@ private:
 	vector <Vector2f> m_FireEmitters;
 	
 public:
+	// A class to manage all the levels
+	LevelManager m_LM;
+
 	// The Engine constructor
 	Engine();
 
 	// Run will call all the private functions
 	void run();
-
 };

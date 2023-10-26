@@ -7,6 +7,8 @@ public:
 	// A constructor specific to Bob
 	Bob();
 
+	bool hasPatrolPoint;
+
 	// The overriden input handler for Bob
 	bool virtual handleInput();
 

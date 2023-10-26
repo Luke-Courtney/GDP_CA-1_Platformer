@@ -6,7 +6,7 @@ using namespace sf;
 SoundManager::SoundManager()
 {
 	// Load the sound in to the buffers
-	m_FireBuffer.loadFromFile("sound/fire1.wav");
+	//m_FireBuffer.loadFromFile("sound/fire1.wav");
 	m_FallInFireBuffer.loadFromFile("sound/fallinfire.wav");
 	m_FallInWaterBuffer.loadFromFile("sound/fallinwater.wav");
 	m_JumpBuffer.loadFromFile("sound/jump.wav");
