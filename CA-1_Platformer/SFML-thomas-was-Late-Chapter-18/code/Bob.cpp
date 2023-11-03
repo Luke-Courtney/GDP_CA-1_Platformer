@@ -3,6 +3,18 @@
 #include <iostream>
 #include "Engine.h"
 
+/*
+References to Bobs in:
+- Engine.h
+- Engine.cpp
+- Draw.cpp
+- LoadLevel.cpp
+- LevelManager.h
+- LevelManager.cpp
+- Update.cpp
+- DetectCollisions.cpp
+*/
+
 Bob::Bob()
 {
 	// Associate a texture with the sprite
@@ -46,7 +58,7 @@ bool Bob::handleInput()
 
 	patrol();
 
-	if (Keyboard::isKeyPressed(Keyboard::Up))
+	if (false)
 	{
 
 		// Start a jump if not already jumping

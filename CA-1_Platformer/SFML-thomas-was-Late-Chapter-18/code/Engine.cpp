@@ -59,7 +59,9 @@ Engine::Engine()
 
 	//Set bob patrol point
 	m_Bob.SetPatrolPoint(Vector2f(500, 400));
-	m_Bob2.SetPatrolPoint(Vector2f(2000, 400));
+	m_RedBob.SetPatrolPoint(Vector2f(2000, 400));
+	m_BlueBob.SetPatrolPoint(Vector2f(2500, 400));
+
 }// End Engine constructor
 
 void Engine::run()

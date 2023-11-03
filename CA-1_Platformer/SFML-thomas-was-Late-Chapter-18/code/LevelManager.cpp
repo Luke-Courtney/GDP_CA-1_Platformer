@@ -33,7 +33,8 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_BaseTimeLimit = 30.0f;
 
 		m_BobStartPos = Vector2f(500, 400);
-		m_Bob2StartPos = Vector2f(2000,400);
+		m_RedBobStartPos = Vector2f(2000,400);
+		m_BlueBobStartPos = Vector2f(2500, 400);
 		break;
 
 	case 2:
@@ -43,7 +44,8 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_BaseTimeLimit = 100.0f;
 
 		m_BobStartPos = Vector2f(200, 800);
-		m_Bob2StartPos = Vector2f(3900, 800);
+		m_RedBobStartPos = Vector2f(2000, 800);
+		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
 
 	case 3:
@@ -53,7 +55,8 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_BaseTimeLimit = 30.0f;
 
 		m_BobStartPos = Vector2f(500, 400);
-		m_Bob2StartPos = Vector2f(1950, 400);
+		m_RedBobStartPos = Vector2f(1950, 400);
+		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
 
 	case 4:
@@ -63,10 +66,9 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_BaseTimeLimit = 50.0f;
 
 		m_BobStartPos = Vector2f(500, 600);
-		m_Bob2StartPos = Vector2f(500, 400);
+		m_RedBobStartPos = Vector2f(500, 400);
+		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
-
-	
 	}
 
 	ifstream inputFile(levelToLoad);

@@ -29,13 +29,8 @@ protected:
 	// Where is the player
 	Vector2f m_Position;
 
-	// How fast is the character
-	float m_Speed = 400;
-
 	// Private variables and functions come next
 private:
-	// What is the gravity
-	float m_Gravity;
 
 	//Speed
 	float m_RightSpeed =  0.0f;
@@ -86,4 +81,10 @@ public:
 
 	// We will call this function once every frame
 	void update(float elapsedTime);
+
+	// How fast is the character
+	float m_Speed = 400;
+
+	// What is the gravity
+	float m_Gravity;
 };

@@ -26,12 +26,12 @@ void Engine::loadLevel()
 	// Spawn Thomas and Bobs
 	m_Thomas.spawn(m_LM.getStartPosition(), GRAVITY);
 	m_Bob.spawn(m_LM.m_BobStartPos, GRAVITY);
-	m_Bob2.spawn(m_LM.m_Bob2StartPos, GRAVITY);
+	m_RedBob.spawn(m_LM.m_RedBobStartPos, GRAVITY);
+	m_BlueBob.spawn(m_LM.m_BlueBobStartPos, GRAVITY);
 
 	//Spawn pickups
-	cout << "Spawning speedup" << endl;
 	m_SpeedUp.spawn(Vector2f(400, 400));
-	cout << "speedup: " << m_SpeedUp.m_Position.x << "," << m_SpeedUp.m_Position.y << endl;
+	m_GravityDown.spawn(Vector2f(200, 400));
 
 	// Make sure this code isn't run again
 	m_NewLevelRequired = false;

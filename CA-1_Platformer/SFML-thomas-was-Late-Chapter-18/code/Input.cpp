@@ -38,7 +38,7 @@ void Engine::input()
 	}
 
 	// Handle input specific to Bob
-	if (m_Bob2.handleInput())
+	if (m_RedBob.handleInput())
 	{
 		// Play a jump sound
 		m_SM.playJump();

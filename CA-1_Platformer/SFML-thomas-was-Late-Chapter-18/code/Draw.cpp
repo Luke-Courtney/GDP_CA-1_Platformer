@@ -19,7 +19,7 @@ void Engine::draw()
 		m_Window.draw(m_BackgroundSprite, &m_RippleShader);
 
 		// Switch to m_MainView
-		m_Window.setView(m_MainView);		
+		m_Window.setView(m_MainView);
 
 		// Draw the Level
 		m_Window.draw(m_VALevel, &m_TextureTiles);
@@ -29,10 +29,12 @@ void Engine::draw()
 
 		// Draw bobs
 		m_Window.draw(m_Bob.getSprite());
-		m_Window.draw(m_Bob2.getSprite());
+		m_Window.draw(m_RedBob.getSprite());
+		m_Window.draw(m_BlueBob.getSprite());
 
 		//Draw pickups
 		m_Window.draw(m_SpeedUp.getSprite());
+		m_Window.draw(m_GravityDown.getSprite());
 
 		// Draw the particle system
 		if (m_PS.running())
@@ -62,13 +64,15 @@ void Engine::draw()
 			
 		// Draw bob
 		m_Window.draw(m_Bob.getSprite());
+		m_Window.draw(m_RedBob.getSprite());
+		m_Window.draw(m_BlueBob.getSprite());
 
 		// Draw thomas
 		m_Window.draw(m_Thomas.getSprite());
 
 		//Draw pickups
 		m_Window.draw(m_SpeedUp.getSprite());
-
+		m_Window.draw(m_GravityDown.getSprite());
 
 		// Draw the particle system
 		if (m_PS.running())
@@ -97,8 +101,11 @@ void Engine::draw()
 
 		// Draw bob
 		m_Window.draw(m_Bob.getSprite());
+		m_Window.draw(m_RedBob.getSprite());
+		m_Window.draw(m_BlueBob.getSprite());
 
 		m_Window.draw(m_SpeedUp.getSprite());
+		m_Window.draw(m_GravityDown.getSprite());
 
 		// Draw the particle system
 		if (m_PS.running())

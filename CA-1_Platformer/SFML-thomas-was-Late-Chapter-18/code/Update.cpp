@@ -30,10 +30,12 @@ void Engine::update(float dtAsSeconds)
 
 		// Update Bobs
 		m_Bob.update(dtAsSeconds);
-		m_Bob2.update(dtAsSeconds);
+		m_RedBob.update(dtAsSeconds);
+		m_BlueBob.update(dtAsSeconds);
 
 		//Update pickups
-		m_SpeedUp.update();
+		m_SpeedUp.update(dtAsSeconds);
+		m_GravityDown.update(dtAsSeconds);
 
 		// Detect collisions and see if characters have reached the goal tile
 		// The second part of the if condition is only executed
@@ -51,7 +53,8 @@ void Engine::update(float dtAsSeconds)
 		{
 			// Run bobs collision detection
 			detectCollisions(m_Bob);
-			detectCollisions(m_Bob2);
+			detectCollisions(m_RedBob);
+			detectCollisions(m_BlueBob);
 		}
 
 		// Count down the time the player has left

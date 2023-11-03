@@ -21,7 +21,8 @@ public:
 	const int VERTS_IN_QUAD = 4;
 
 	Vector2f m_BobStartPos;
-	Vector2f m_Bob2StartPos;
+	Vector2f m_RedBobStartPos;
+	Vector2f m_BlueBobStartPos;
 
 	float getTimeLimit();
 

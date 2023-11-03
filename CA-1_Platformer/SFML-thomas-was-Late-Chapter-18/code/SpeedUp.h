@@ -1,26 +1,13 @@
 #pragma once
+#include "Pickup.h"
 
-class SpeedUp
+class SpeedUp : public Pickup
 {
 public:
-	//default Constructor
+	// A constructor specific to Bob
 	SpeedUp();
 
-	//Update
-	void update();
-
-	//Get sprite
-	Sprite getSprite();
-
-	//Spawn
-	void spawn(Vector2f position);
-
-	//SpriteSprite m_Sprite;
-	Sprite m_Sprite;
-
-	//Position
-	Vector2f m_Position;
-
-	FloatRect getPosition();
+	// The overriden input handler for Bob
+	bool virtual handleInput();
 };
 

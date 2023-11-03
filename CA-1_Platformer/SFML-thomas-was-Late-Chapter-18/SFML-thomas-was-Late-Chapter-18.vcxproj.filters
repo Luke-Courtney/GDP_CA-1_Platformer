@@ -45,7 +45,19 @@
     <ClInclude Include="code\Thomas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Code\Red_bob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Blue_bob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Pickup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="code\SpeedUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\GravityDown.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -101,7 +113,19 @@
     <ClCompile Include="code\Update.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="code\Red_bob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Blue_bob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\Pickup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="code\SpeedUp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\GravityDown.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

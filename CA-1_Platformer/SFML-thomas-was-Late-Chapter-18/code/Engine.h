@@ -3,7 +3,10 @@
 #include "TextureHolder.h"
 #include "Thomas.h"
 #include "Bob.h"
+#include "Red_bob.h"
+#include "Blue_bob.h"
 #include "SpeedUp.h"
+#include "GravityDown.h"
 #include "LevelManager.h"
 #include "SoundManager.h"
 #include "HUD.h"
@@ -23,11 +26,13 @@ private:
 	// Thomas and his friend, Bob
 	Thomas m_Thomas;
 	Bob m_Bob;
-	Bob m_Bob2;
+	Red_bob m_RedBob;
+	Blue_bob m_BlueBob;
 
 	//Pickups
 	//Speed
 	SpeedUp m_SpeedUp;
+	GravityDown m_GravityDown;
 
 	// Create a SoundManager
 	SoundManager m_SM;

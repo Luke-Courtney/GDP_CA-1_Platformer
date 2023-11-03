@@ -1,7 +1,9 @@
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Blue_bob.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Blue_bob.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Bob.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Bob.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\DetectCollisions.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Draw.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Draw.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Engine.obj
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\GravityDown.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\GravityDown.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\HUD.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\HUD.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Input.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Input.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\LevelManager.obj
@@ -9,8 +11,10 @@ C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Main.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Main.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Particle.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Particle.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\ParticleSystem.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\ParticleSystem.obj
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Pickup.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Pickup.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\PlayableCharacter.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PopulateEmitters.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\PopulateEmitters.obj
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Red_bob.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\Red_bob.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\SoundManager.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\SoundManager.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\SpeedUp.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\SpeedUp.obj
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\TextureHolder.cpp;C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\x64\Debug\TextureHolder.obj

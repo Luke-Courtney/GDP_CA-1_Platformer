@@ -38,13 +38,22 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 	}
 
 	//Detect thomas collisions with enemy
-	if (m_Thomas.getPosition().intersects(m_Bob.getPosition()))
+	if (m_Thomas.getPosition().intersects(m_Bob.getPosition()) || m_Thomas.getPosition().intersects(m_RedBob.getPosition()) || m_Thomas.getPosition().intersects(m_BlueBob.getPosition()))
 	{
 		if (m_Thomas.getFeet().intersects(m_Bob.getHead()))
 		{
 			m_Bob.spawn(Vector2f(10,10), GRAVITY);
 		}
-		else {
+		else if(m_Thomas.getFeet().intersects(m_RedBob.getHead()))
+		{
+			m_RedBob.spawn(Vector2f(10, 10), GRAVITY);
+		}
+		else if (m_Thomas.getFeet().intersects(m_BlueBob.getHead()))
+		{
+			m_BlueBob.spawn(Vector2f(10, 10), GRAVITY);
+		}
+		else
+		{
 			//Respawn thomas
 			m_Thomas.spawn(m_Thomas.startPos, GRAVITY);
 		}
@@ -104,6 +113,21 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				}
 			}
 			
+			//Pickups
+			//SpeedUp
+			if (m_Thomas.getPosition().intersects(m_SpeedUp.getPosition()))
+			{
+				m_Thomas.m_Speed += 25;
+				m_SpeedUp.active = false;
+			}
+
+			//GravityDown
+			if (m_Thomas.getPosition().intersects(m_GravityDown.getPosition()))
+			{
+				m_Thomas.m_Gravity += 2;
+				m_GravityDown.active = false;
+			}
+
 			// More collision detection here once we have learned about particle effects
 			// Has the characters' feet touched fire or water?
 			// If so, start a particle effect
