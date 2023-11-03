@@ -50,23 +50,12 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 
 	case 3:
 		levelToLoad = "levels/level3.txt";
-		m_StartPosition.x = 1250;
-		m_StartPosition.y = 0;
+		m_StartPosition.x = 250;
+		m_StartPosition.y = 700;
 		m_BaseTimeLimit = 30.0f;
 
 		m_BobStartPos = Vector2f(500, 400);
 		m_RedBobStartPos = Vector2f(1950, 400);
-		m_BlueBobStartPos = Vector2f(2500, 450);
-		break;
-
-	case 4:
-		levelToLoad = "levels/level4.txt";
-		m_StartPosition.x = 50;
-		m_StartPosition.y = 200;
-		m_BaseTimeLimit = 50.0f;
-
-		m_BobStartPos = Vector2f(500, 600);
-		m_RedBobStartPos = Vector2f(500, 400);
 		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
 	}

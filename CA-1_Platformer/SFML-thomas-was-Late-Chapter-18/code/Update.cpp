@@ -36,6 +36,7 @@ void Engine::update(float dtAsSeconds)
 		//Update pickups
 		m_SpeedUp.update(dtAsSeconds);
 		m_GravityDown.update(dtAsSeconds);
+		m_ExtraTime.update(dtAsSeconds);
 
 		// Detect collisions and see if characters have reached the goal tile
 		// The second part of the if condition is only executed

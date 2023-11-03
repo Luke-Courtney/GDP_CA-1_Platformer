@@ -60,6 +60,9 @@
     <ClInclude Include="code\GravityDown.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="code\ExtraTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\Bob.cpp">
@@ -126,6 +129,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="code\GravityDown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\ExtraTime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

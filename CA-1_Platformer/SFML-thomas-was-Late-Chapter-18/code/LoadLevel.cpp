@@ -31,7 +31,8 @@ void Engine::loadLevel()
 
 	//Spawn pickups
 	m_SpeedUp.spawn(Vector2f(400, 400));
-	m_GravityDown.spawn(Vector2f(200, 400));
+	m_GravityDown.spawn(Vector2f(1200, 800));
+	m_ExtraTime.spawn(Vector2f(2600,600));
 
 	// Make sure this code isn't run again
 	m_NewLevelRequired = false;

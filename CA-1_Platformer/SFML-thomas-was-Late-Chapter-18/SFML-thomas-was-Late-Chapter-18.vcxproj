@@ -22,6 +22,7 @@
     <ClInclude Include="code\Blue_bob.h" />
     <ClInclude Include="code\Bob.h" />
     <ClInclude Include="code\Engine.h" />
+    <ClInclude Include="code\ExtraTime.h" />
     <ClInclude Include="code\GravityDown.h" />
     <ClInclude Include="code\HUD.h" />
     <ClInclude Include="code\LevelManager.h" />
@@ -41,6 +42,7 @@
     <ClCompile Include="code\DetectCollisions.cpp" />
     <ClCompile Include="code\Draw.cpp" />
     <ClCompile Include="code\Engine.cpp" />
+    <ClCompile Include="code\ExtraTime.cpp" />
     <ClCompile Include="code\GravityDown.cpp" />
     <ClCompile Include="code\HUD.cpp" />
     <ClCompile Include="code\Input.cpp" />

@@ -111,13 +111,42 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				{
 					character.stopJump();
 				}
+
+
+				//If a bob intersects a block, flip
+				if (m_Bob.getRight().intersects(block))
+				{
+					m_Bob.flipped = true;
+				}
+				else if(m_Bob.getLeft().intersects(block))
+				{
+					m_Bob.flipped = false;
+				}
+
+				if (m_RedBob.getRight().intersects(block))
+				{
+					m_RedBob.flipped = true;
+				}
+				else if (m_RedBob.getLeft().intersects(block))
+				{
+					m_RedBob.flipped = false;
+				}
+
+				if (m_BlueBob.getRight().intersects(block))
+				{
+					m_BlueBob.flipped = true;
+				}
+				else if (m_BlueBob.getLeft().intersects(block))
+				{
+					m_BlueBob.flipped = false;
+				}
 			}
-			
+
 			//Pickups
 			//SpeedUp
 			if (m_Thomas.getPosition().intersects(m_SpeedUp.getPosition()))
 			{
-				m_Thomas.m_Speed += 25;
+				m_Thomas.m_Speed += 15;
 				m_SpeedUp.active = false;
 			}
 
@@ -126,6 +155,13 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 			{
 				m_Thomas.m_Gravity += 2;
 				m_GravityDown.active = false;
+			}
+
+			//ExtraTime
+			if (m_Thomas.getPosition().intersects(m_ExtraTime.getPosition()))
+			{
+				m_TimeRemaining += 3;
+				m_ExtraTime.active = false;
 			}
 
 			// More collision detection here once we have learned about particle effects

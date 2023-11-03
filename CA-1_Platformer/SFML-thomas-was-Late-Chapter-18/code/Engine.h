@@ -7,6 +7,7 @@
 #include "Blue_bob.h"
 #include "SpeedUp.h"
 #include "GravityDown.h"
+#include "ExtraTime.h";
 #include "LevelManager.h"
 #include "SoundManager.h"
 #include "HUD.h"
@@ -33,6 +34,7 @@ private:
 	//Speed
 	SpeedUp m_SpeedUp;
 	GravityDown m_GravityDown;
+	ExtraTime m_ExtraTime;
 
 	// Create a SoundManager
 	SoundManager m_SM;

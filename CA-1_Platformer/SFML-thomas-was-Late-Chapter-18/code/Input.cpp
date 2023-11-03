@@ -37,8 +37,15 @@ void Engine::input()
 		m_SM.playJump();
 	}
 
-	// Handle input specific to Bob
+	// Handle input specific to RedBob
 	if (m_RedBob.handleInput())
+	{
+		// Play a jump sound
+		m_SM.playJump();
+	}
+
+	// Handle input specific to BlueBob
+	if (m_BlueBob.handleInput())
 	{
 		// Play a jump sound
 		m_SM.playJump();
