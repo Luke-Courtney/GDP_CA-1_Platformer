@@ -1,40 +1,106 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SFML-thomas-was-Late-Chapter-18.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  DetectCollisions.cpp
+  LevelManager.cpp
 C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\Engine.h(10,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(12,16): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(73,26): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(119,31): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(13,17): warning C4244: '=': conversion from 'const int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(119,16): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(33,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(122,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(33,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(122,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(37,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(45,33): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(49,37): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(53,38): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(58,38): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(67,19): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(125,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(68,18): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(125,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\DetectCollisions.cpp(75,47): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(128,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(128,17): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(134,19): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(137,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(137,14): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(140,35): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(140,14): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\LevelManager.cpp(143,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  PlayableCharacter.cpp
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp(98,21): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp(104,22): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp(106,28): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp(110,21): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\SFML-thomas-was-Late-Chapter-18\code\PlayableCharacter.cpp(112,27): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
   SFML-thomas-was-Late-Chapter-18.vcxproj -> C:\Users\lukec\GDP_CA-1_Platformer\CA-1_Platformer\x64\Debug\CA-1_Platformer.exe

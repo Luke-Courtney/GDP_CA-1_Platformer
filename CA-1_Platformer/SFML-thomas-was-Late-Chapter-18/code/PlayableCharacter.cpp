@@ -26,7 +26,6 @@ void PlayableCharacter::update(float elapsedTime)
 		}
 
 		m_Position.x += m_RightSpeed * elapsedTime;
-		//m_Sprite.setScale(Vector2f(1, 1));
 	}
 	else if (m_RightSpeed > 0)
 	{
