@@ -4,6 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include "LevelManager.h"
+#include "Engine.h"
 
 using namespace sf;
 using namespace std;
@@ -30,30 +31,33 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_StartPosition.x = 100;
 		m_StartPosition.y = 100;
 		m_BaseTimeLimit = 30.0f;
+
+		m_BobStartPos = Vector2f(500, 400);
+		m_RedBobStartPos = Vector2f(2000,400);
+		m_BlueBobStartPos = Vector2f(2500, 400);
 		break;
 
 	case 2:
 		levelToLoad = "levels/level2.txt";
 		m_StartPosition.x = 100;
-		m_StartPosition.y = 3600;
+		m_StartPosition.y = 750;
 		m_BaseTimeLimit = 100.0f;
+
+		m_BobStartPos = Vector2f(200, 800);
+		m_RedBobStartPos = Vector2f(2000, 800);
+		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
 
 	case 3:
 		levelToLoad = "levels/level3.txt";
-		m_StartPosition.x = 1250;
-		m_StartPosition.y = 0;
+		m_StartPosition.x = 250;
+		m_StartPosition.y = 700;
 		m_BaseTimeLimit = 30.0f;
-		break;
 
-	case 4:
-		levelToLoad = "levels/level4.txt";
-		m_StartPosition.x = 50;
-		m_StartPosition.y = 200;
-		m_BaseTimeLimit = 50.0f;
+		m_BobStartPos = Vector2f(500, 400);
+		m_RedBobStartPos = Vector2f(1950, 400);
+		m_BlueBobStartPos = Vector2f(2500, 450);
 		break;
-
-	
 	}
 
 	ifstream inputFile(levelToLoad);

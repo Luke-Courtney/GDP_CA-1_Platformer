@@ -33,8 +33,30 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 	FloatRect level(0, 0, m_LM.getLevelSize().x * TILE_SIZE, m_LM.getLevelSize().y * TILE_SIZE);
 	if (!character.getPosition().intersects(level))
 	{
-		// respawn the character
-		character.spawn(m_LM.getStartPosition(), GRAVITY);
+		//Respawn the character
+		character.spawn(character.startPos, GRAVITY);
+	}
+
+	//Detect thomas collisions with enemy
+	if (m_Thomas.getPosition().intersects(m_Bob.getPosition()) || m_Thomas.getPosition().intersects(m_RedBob.getPosition()) || m_Thomas.getPosition().intersects(m_BlueBob.getPosition()))
+	{
+		if (m_Thomas.getFeet().intersects(m_Bob.getHead()))
+		{
+			m_Bob.spawn(Vector2f(10,10), GRAVITY);
+		}
+		else if(m_Thomas.getFeet().intersects(m_RedBob.getHead()))
+		{
+			m_RedBob.spawn(Vector2f(10, 10), GRAVITY);
+		}
+		else if (m_Thomas.getFeet().intersects(m_BlueBob.getHead()))
+		{
+			m_BlueBob.spawn(Vector2f(10, 10), GRAVITY);
+		}
+		else
+		{
+			//Respawn thomas
+			m_Thomas.spawn(m_Thomas.startPos, GRAVITY);
+		}
 	}
 
 	for (int x = startX; x < endX; x++)
@@ -46,10 +68,9 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 			block.top = y * TILE_SIZE;
 
 			// Has character been burnt or drowned?
-			// Use head as this allows him to sink a bit
 			if (m_ArrayLevel[y][x] == 2 || m_ArrayLevel[y][x] == 3)
 			{
-				if (character.getHead().intersects(block))
+				if (character.getPosition().intersects(block))
 				{
 					character.spawn(m_LM.getStartPosition(), GRAVITY);
 					// Which sound should be played?
@@ -90,8 +111,59 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				{
 					character.stopJump();
 				}
+
+
+				//If a bob intersects a block, flip
+				if (m_Bob.getRight().intersects(block))
+				{
+					m_Bob.flipped = true;
+				}
+				else if(m_Bob.getLeft().intersects(block))
+				{
+					m_Bob.flipped = false;
+				}
+
+				if (m_RedBob.getRight().intersects(block))
+				{
+					m_RedBob.flipped = true;
+				}
+				else if (m_RedBob.getLeft().intersects(block))
+				{
+					m_RedBob.flipped = false;
+				}
+
+				if (m_BlueBob.getRight().intersects(block))
+				{
+					m_BlueBob.flipped = true;
+				}
+				else if (m_BlueBob.getLeft().intersects(block))
+				{
+					m_BlueBob.flipped = false;
+				}
 			}
-			
+
+			//Pickups
+			//SpeedUp
+			if (m_Thomas.getPosition().intersects(m_SpeedUp.getPosition()))
+			{
+				m_Thomas.m_Speed += 15;
+				m_SpeedUp.active = false;
+			}
+
+			//GravityDown
+			if (m_Thomas.getPosition().intersects(m_GravityDown.getPosition()))
+			{
+				m_Thomas.m_Gravity += 2;
+				m_GravityDown.active = false;
+			}
+
+			//ExtraTime
+			if (m_Thomas.getPosition().intersects(m_ExtraTime.getPosition()))
+			{
+				m_TimeRemaining += 3;
+				m_ExtraTime.active = false;
+			}
+
 			// More collision detection here once we have learned about particle effects
 			// Has the characters' feet touched fire or water?
 			// If so, start a particle effect

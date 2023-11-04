@@ -31,8 +31,8 @@ bool Thomas::handleInput()
 	{
 		m_IsJumping = false;
 		m_IsFalling = true;
-
 	}
+
 	if (Keyboard::isKeyPressed(Keyboard::A))
 	{
 		m_LeftPressed = true;

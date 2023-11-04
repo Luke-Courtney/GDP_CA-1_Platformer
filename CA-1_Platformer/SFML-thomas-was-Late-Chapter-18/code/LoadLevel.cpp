@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <iostream>
 
 void Engine::loadLevel()
 {
@@ -22,9 +23,16 @@ void Engine::loadLevel()
 	// How long is this new time limit
 	m_TimeRemaining = m_LM.getTimeLimit();
 
-	// Spawn Thomas and Bob
+	// Spawn Thomas and Bobs
 	m_Thomas.spawn(m_LM.getStartPosition(), GRAVITY);
-	m_Bob.spawn(m_LM.getStartPosition(), GRAVITY);
+	m_Bob.spawn(m_LM.m_BobStartPos, GRAVITY);
+	m_RedBob.spawn(m_LM.m_RedBobStartPos, GRAVITY);
+	m_BlueBob.spawn(m_LM.m_BlueBobStartPos, GRAVITY);
+
+	//Spawn pickups
+	m_SpeedUp.spawn(Vector2f(400, 400));
+	m_GravityDown.spawn(Vector2f(1200, 800));
+	m_ExtraTime.spawn(Vector2f(2600,600));
 
 	// Make sure this code isn't run again
 	m_NewLevelRequired = false;

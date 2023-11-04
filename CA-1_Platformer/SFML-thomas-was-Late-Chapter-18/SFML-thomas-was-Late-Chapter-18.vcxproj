@@ -19,22 +19,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\Blue_bob.h" />
     <ClInclude Include="code\Bob.h" />
     <ClInclude Include="code\Engine.h" />
+    <ClInclude Include="code\ExtraTime.h" />
+    <ClInclude Include="code\GravityDown.h" />
     <ClInclude Include="code\HUD.h" />
     <ClInclude Include="code\LevelManager.h" />
     <ClInclude Include="code\Particle.h" />
     <ClInclude Include="code\ParticleSystem.h" />
+    <ClInclude Include="code\Pickup.h" />
     <ClInclude Include="code\PlayableCharacter.h" />
+    <ClInclude Include="Code\Red_bob.h" />
     <ClInclude Include="code\SoundManager.h" />
+    <ClInclude Include="code\SpeedUp.h" />
     <ClInclude Include="code\TextureHolder.h" />
     <ClInclude Include="code\Thomas.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="code\Blue_bob.cpp" />
     <ClCompile Include="code\Bob.cpp" />
     <ClCompile Include="code\DetectCollisions.cpp" />
     <ClCompile Include="code\Draw.cpp" />
     <ClCompile Include="code\Engine.cpp" />
+    <ClCompile Include="code\ExtraTime.cpp" />
+    <ClCompile Include="code\GravityDown.cpp" />
     <ClCompile Include="code\HUD.cpp" />
     <ClCompile Include="code\Input.cpp" />
     <ClCompile Include="code\LevelManager.cpp" />
@@ -42,9 +51,12 @@
     <ClCompile Include="code\Main.cpp" />
     <ClCompile Include="code\Particle.cpp" />
     <ClCompile Include="code\ParticleSystem.cpp" />
+    <ClCompile Include="code\Pickup.cpp" />
     <ClCompile Include="code\PlayableCharacter.cpp" />
     <ClCompile Include="code\PopulateEmitters.cpp" />
+    <ClCompile Include="code\Red_bob.cpp" />
     <ClCompile Include="code\SoundManager.cpp" />
+    <ClCompile Include="code\SpeedUp.cpp" />
     <ClCompile Include="code\TextureHolder.cpp" />
     <ClCompile Include="code\Thomas.cpp" />
     <ClCompile Include="code\Update.cpp" />

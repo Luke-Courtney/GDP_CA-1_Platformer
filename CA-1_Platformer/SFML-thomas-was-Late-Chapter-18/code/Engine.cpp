@@ -9,7 +9,7 @@ Engine::Engine()
 	resolution.y = VideoMode::getDesktopMode().height;
 
 	m_Window.create(VideoMode(resolution.x, resolution.y),
-		"Thomas was late",
+		"CA GDP Platformer",
 		Style::Fullscreen);
 
 	// Initialize the full screen view
@@ -30,6 +30,7 @@ Engine::Engine()
 	m_BGRightView.setViewport(
 		FloatRect(0.5f, 0.001f, 0.499f, 0.998f));
 
+	/*
 	// Can this graphics card use shaders?
 	if (!sf::Shader::isAvailable())
 	{
@@ -42,6 +43,7 @@ Engine::Engine()
 		m_RippleShader.loadFromFile("shaders/vertShader.vert",
 			"shaders/rippleShader.frag");
 	}
+	*/
 
 	m_BackgroundTexture = TextureHolder::GetTexture(
 		"graphics/background.png");
@@ -52,10 +54,13 @@ Engine::Engine()
 
 	// Load the texture for the background vertex array
 	m_TextureTiles = TextureHolder::GetTexture(
-		"graphics/tiles_sheet.png");
-
-	// Initialize the particle system
+		"graphics/tiles_sheet.png");	// Initialize the particle system
 	m_PS.init(1000);
+
+	//Set bob patrol point
+	m_Bob.SetPatrolPoint(Vector2f(500, 400));
+	m_RedBob.SetPatrolPoint(Vector2f(2000, 400));
+	m_BlueBob.SetPatrolPoint(Vector2f(2500, 400));
 
 }// End Engine constructor
 

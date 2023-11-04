@@ -26,16 +26,17 @@ protected:
 	// Has the player just initialted a jump
 	bool m_JustJumped = false;
 
-	// Private variables and functions come next
-private:
-	// What is the gravity
-	float m_Gravity;
-
-	// How fast is the character
-	float m_Speed = 400;
-
 	// Where is the player
 	Vector2f m_Position;
+
+	// Private variables and functions come next
+private:
+
+	//Speed
+	float m_RightSpeed =  0.0f;
+	float m_LeftSpeed = 0.0f;
+	float rampUp = 0.75f;
+	float rampDown = 0.8f;
 
 	// Where are the characters various body parts?
 	FloatRect m_Feet;
@@ -50,6 +51,8 @@ private:
 public:
 
 	void spawn(Vector2f startPosition, float gravity);
+
+	Vector2f startPos;
 
 	// This is a pure virtual function
 	bool virtual handleInput() = 0;
@@ -78,4 +81,10 @@ public:
 
 	// We will call this function once every frame
 	void update(float elapsedTime);
+
+	// How fast is the character
+	float m_Speed = 400;
+
+	// What is the gravity
+	float m_Gravity;
 };
